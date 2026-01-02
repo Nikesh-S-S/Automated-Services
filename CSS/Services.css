@@ -1,0 +1,527 @@
+*
+{
+  
+  margin:0%;
+  padding: 0%;
+  
+
+}
+
+body
+{
+  background-color: #ffffff;
+}
+
+.Main-body
+{
+  position: relative;
+}
+
+.Navigation
+{
+  display:flex;
+  flex-direction: row;
+  background-color: #000000;
+}
+
+.Navigation-bar
+{
+  flex: 40%;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.Logo
+{
+  display: flex;
+  flex-direction: row;
+  flex: 0%; 
+}
+
+.Header-Name
+{
+  flex: 20%;
+  color: #fd1937;
+  padding-top: 1%;
+  font-size: 25px;
+  
+}
+
+.Logo-img
+{
+  max-height: 72px;
+    max-width: 250px;
+}
+
+.Nav
+ {
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  margin: 0.5rem;
+  border-radius: 10% 10% 0% 0% / 10% 10% 0% 0%;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.Nav::before 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  border-radius: 10% 10% 0% 0% / 10% 10% 0% 0%;
+  background-color: #1e2be2;
+  transition: 0.5s ease;
+}
+
+.Nav:hover 
+{
+  transition-delay: 0.5s;
+}
+
+.Nav:hover::before 
+{
+  width: 100%;
+}
+
+.Nav-active
+{
+  color: #fc0e2d;
+}
+
+.Nav-icon
+{
+  display: none;
+  flex: 15%;
+}
+
+.Services-Container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.service-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.service-description {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+.service-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #2980b9;
+}
+
+/* Specific Service Color Themes */
+.service-card:nth-child(1) {
+    border-left: 5px solid #e74c3c; /* Red */
+    background-color: #ffe6e6; /* Light Red */
+}
+
+.service-card:nth-child(2) {
+    border-left: 5px solid #f39c12; /* Orange */
+    background-color: #fff8e1; /* Light Orange */
+}
+
+.service-card:nth-child(3) {
+    border-left: 5px solid #2ecc71; /* Green */
+    background-color: #e8f5e9; /* Light Green */
+}
+
+.service-card:nth-child(4) {
+    border-left: 5px solid #3498db; /* Blue */
+    background-color: #e1f5fe; /* Light Blue */
+}
+
+.service-card:nth-child(5) {
+    border-left: 5px solid #9b59b6; /* Purple */
+    background-color: #f3e5f5; /* Light Purple */
+}
+
+.service-card:nth-child(6) {
+    border-left: 5px solid #34495e; /* Dark Blue */
+    background-color: #e8eaf6; /* Light Dark Blue */
+}
+
+
+
+
+
+
+.footer {
+  background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links,
+.footer-about,
+.footer-contact,
+.footer-follow {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a,
+.footer-about a,
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-about a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-follow .social-icons {
+  margin-bottom: 15px;
+}
+
+.footer-follow .social-icons a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  background-color: #e94560;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #d73c52;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+/* Suggested Services Container */
+.suggested-container {
+  background: linear-gradient(135deg, #c3cfe2, #e2e4f1); /* Gradient background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Keeps the container centered and contained */
+  margin: 0 auto;
+}
+
+.suggested-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.suggested-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px; /* Space between items */
+  justify-items: center;
+}
+
+.service-suggested-card {
+  background: linear-gradient(135deg, #ffffff, #d3e0ea); /* Card gradient */
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%; /* Full width of the grid column */
+  max-width: 200px; /* Control card size */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-suggested-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-suggested-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Booking Form Container */
+.booking-form {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* Gradient background */
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: #333;
+  text-align: left;
+}
+
+.booking-form h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  background: rgba(255, 255, 255, 0.9);
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 175, 123, 0.5);
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #fa709a, #fee140); /* Gradient button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #fee140, #fa709a); /* Reverse gradient on hover */
+  box-shadow: 0 4px 12px rgba(250, 112, 154, 0.3);
+}
+
+.Services-Container {
+  text-align: center;
+  padding: 20px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #ffffff; /* White background for modal */
+  margin: 10% auto; /* Center the modal */
+  padding: 20px;
+  border: 2px solid #4CAF50; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  width: 80%; /* Could be more or less, depending on screen size */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.close-button {
+  color: #4CAF50; /* Green color for close button */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #d9534f; /* Change color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal text styles */
+#modalTitle {
+  color: #4CAF50; /* Green title */
+  margin-bottom: 10px;
+}
+
+#modalDescription {
+  color: #333; /* Darker text for description */
+}

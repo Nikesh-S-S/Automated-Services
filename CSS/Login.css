@@ -1,0 +1,370 @@
+*
+{
+  
+  margin:0%;
+  padding: 0%;
+  
+
+}
+
+body
+{
+  background-color: #000000;
+}
+
+.Main-body
+{
+  position: relative;
+}
+
+.Navigation
+{
+  display:flex;
+  flex-direction: row;
+  background-color: #000000;
+}
+
+.Navigation-bar
+{
+  flex: 40%;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.Logo
+{
+  display: flex;
+  flex-direction: row;
+  flex: 0%; 
+}
+
+.Header-Name
+{
+  flex: 20%;
+  color: #fd1937;
+  padding-top: 1%;
+  font-size: 25px;
+  
+}
+
+.Logo-img
+{
+  max-height: 72px;
+    max-width: 250px;
+}
+
+.Nav
+ {
+  text-decoration: none;
+  padding: 0.5rem 1.25rem;
+  margin: 0.5rem;
+  border-radius: 10% 10% 0% 0% / 10% 10% 0% 0%;
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.Nav::before 
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  border-radius: 10% 10% 0% 0% / 10% 10% 0% 0%;
+  background-color: #1e2be2;
+  transition: 0.5s ease;
+}
+
+.Nav:hover 
+{
+  transition-delay: 0.5s;
+}
+
+.Nav:hover::before 
+{
+  width: 100%;
+}
+
+.Nav-active
+{
+  color: #fc0e2d;
+}
+
+.Nav-icon
+{
+  display: none;
+  flex: 15%;
+}
+
+.Login-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .car-automation-container {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .tab {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff80;
+  }
+
+  .tab div {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffffc7;
+    transition: color 0.3s, border-bottom 0.3s;
+  }
+
+  .tab div.active {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .form-group {
+    margin-top: 20px;
+    display: none;
+  }
+
+  .form-group.active {
+    display: block;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #007bff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-group button:hover {
+    background-color: #e6e6e6;
+  }
+
+  /* Center container styling */
+  .Admin-Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+  }
+
+  .btn-open-admin {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+  }
+
+  .btn-open-admin:hover {
+    background-color: #0056b3;
+  }
+
+  /* Admin Login Container Styles */
+  .admin-login-box {
+    background: linear-gradient(135deg, #282c34, #3c4048);
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .admin-login-box h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00d4ff;
+  }
+
+  .login-form-group {
+    margin-top: 20px;
+  }
+
+  .login-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .login-form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    color: #282c34;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .btn-login:hover {
+    background-color: #e6e6e6;
+  }
+
+  /* Hidden class to hide the admin login container initially */
+  .hidden {
+    display: none;
+  }
+
+  
+  
+  .footer {
+    background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links,
+  .footer-about,
+  .footer-contact,
+  .footer-follow {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links a,
+  .footer-about a,
+  .footer-contact a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover,
+  .footer-about a:hover,
+  .footer-contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-about p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-follow .social-icons {
+    margin-bottom: 15px;
+  }
+  
+  .footer-follow .social-icons a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 15px;
+    background-color: #e94560;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #d73c52;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  
+
+  

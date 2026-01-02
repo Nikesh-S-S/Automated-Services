@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Button</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;display=swap" rel="stylesheet">
+    <style>
+        /* Centering and Styling the Container */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #3b82f6, #a855f7);
+        }
+
+        /* Contact Button Container */
+        .contact-container {
+            background: linear-gradient(135deg, #ffffff, #e0e0e0);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Contact Button Styling */
+        .contact-button {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+        }
+
+        .contact-button:hover {
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <button class="contact-button" onclick="showContactInfo()">Contact Us Now!</button>
+    </div>
+
+    <script>
+        // Function to show the contact information in an alert
+        function showContactInfo() {
+            alert("Contact Information:\n\nEmail: Raxautomation@gmail.com\nPhone: +91 8719091678\nSocial Media: Facebook, Twitter, Instagram, LinkedIn");
+        }
+    </script>
+</body>
+</html>

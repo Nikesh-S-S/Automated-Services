@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #003366;
+    color: #fff;
+}
+
+.logout {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    border-radius: 5px;
+}
+
+.dashboard {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+}
+
+.condition-cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.total-cost p {
+    font-size: 1.5em;
+    color: #333;
+}

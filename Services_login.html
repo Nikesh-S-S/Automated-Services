@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERVICES</title>
+    <link rel="stylesheet" href="./CSS/Services.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body class="Main-Body">
+    <div class="Header-Main">
+        <div class="Header-one">
+            <div class="Navigation">
+                <div class="Logo">
+                    <img class="Logo-img" src="./Images/Logo/Logo-Img.jpeg">
+                </div>
+                <div class="Header-Name">
+                    <h2>Rax Automation Services</h2>
+                </div>
+                <div class="Navigation-bar">
+                    <a class="Active Nav One" href="Index.html">HOME</a>
+                    <a class="Nav Three" href="LOGIN.html">LOGIN</a>
+                    <a class="Nav Two" href="Services.html">SERVICES</a>
+                    
+                    <a class="Nav Four" href="About.html">ABOUT</a>
+                </div>
+            </div>
+
+            <!-- Suggested Services Container -->
+            <div class="suggested-container">
+                <h2 class="suggested-title">SUGGESTED SERVICES</h2>
+                <div class="suggested-services">
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/Oil.jpg" alt="Oil Change">
+                        <div class="service-title">Oil Change</div>
+                    </div>
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/battery.jpg" alt="Battery Inspection">
+                        <div class="service-title">Battery Inspection</div>
+                    </div>
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/brake.jpg" alt="Brake Inspection">
+                        <div class="service-title">Brake Inspection</div>
+                    </div>
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/Maintenance.jpg" alt="Tire Maintenance">
+                        <div class="service-title">Tire Maintenance</div>
+                    </div>
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/Interior.jpg" alt="Interior Check">
+                        <div class="service-title">Interior Check</div>
+                    </div>
+                    <div class="service-suggested-card">
+                        <img src="./Images/Services/Tyre.jpg" alt="Full Car Inspection">
+                        <div class="service-title">Full Car Inspection</div>
+                    </div>
+                </div>
+            </div>
+
+                
+            <div class="booking-form">
+                <h2>Book a Service</h2>
+                <form action="process_booking.php" method="post">
+                    <div class="form-group">
+                        <label for="serviceType">Select Service:</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="">--Select a Service--</option>
+                            <option value="Oil Change">Oil Change</option>
+                            <option value="Tire Maintenance">Tire Maintenance</option>
+                            <option value="Brake Inspection">Brake Inspection</option>
+                            <option value="Interior Inspection">Interior Inspection</option>
+                            <option value="Full Car Inspection">Full Car Inspection</option>
+                            <option value="Battery Check">Battery Check</option>
+                            
+                    <option value="Remote Start">Remote Start</option>
+                    <option value="Keyless Entry">Keyless Entry</option>
+                    <option value="GPS Tracking">GPS Tracking</option>
+                    <option value="Engine Diagnostics">Engine Diagnostics</option>
+                    <option value="Automated Parking">Automated Parking</option>
+                    <option value="Safety Alerts">Safety Alerts</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerName">Name:</label>
+                        <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerEmail">Email:</label>
+                        <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerPhone">Phone:</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointmentDate">Preferred Date:</label>
+                        <input type="date" id="appointmentDate" name="appointmentDate" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Book Now</button>
+                    </div>
+                </form>
+            </div>
+            
+            
+
+            <div class="Services-Container">
+                <!-- Services Container -->
+                <h2>OUR ADVANCED SERVICES</h2>
+                <div class="services-container">
+                    <div class="service-card">
+                        <h2 class="service-title">Remote Start</h2>
+                        <p class="service-description">Start your car from anywhere with a push of a button. Enjoy the convenience of warming up your car on cold mornings.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+            
+                    <div class="service-card">
+                        <h2 class="service-title">Keyless Entry</h2>
+                        <p class="service-description">Access your vehicle without taking your keys out. Simply approach your car, and it will unlock automatically.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+            
+                    <div class="service-card">
+                        <h2 class="service-title">GPS Tracking</h2>
+                        <p class="service-description">Keep track of your car's location in real-time. Perfect for ensuring your vehicle's safety.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+            
+                    <div class="service-card">
+                        <h2 class="service-title">Engine Diagnostics</h2>
+                        <p class="service-description">Get detailed insights into your engine's performance. Identify potential issues before they become serious problems.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+            
+                    <div class="service-card">
+                        <h2 class="service-title">Automated Parking</h2>
+                        <p class="service-description">Let your car park itself with advanced sensors. A stress-free solution for tight parking spots.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+            
+                    <div class="service-card">
+                        <h2 class="service-title">Safety Alerts</h2>
+                        <p class="service-description">Receive alerts for any potential safety issues. Stay informed about your vehicle's health and safety.</p>
+                        <button class="service-button">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Structure -->
+            <div id="serviceModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button">&times;</span>
+                    <h2 id="modalTitle">Service Title</h2>
+                    <p id="modalDescription">Service Description</p>
+                </div>
+            </div>
+            
+
+
+            <div class="Fifth-Container">
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="./Index.html">HOME</a></li>
+                                <li><a href="./LOGIN.html">LOGIN</a></li>
+                                <li><a href="./Services.html">Services</a></li>
+                                <li><a href="./About.html">About Us</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-about">
+                            <h3>About Us</h3>
+                            <p>We are dedicated to providing top-notch car automation services to enhance your driving experience. Our expert team ensures your vehicle runs smoothly and efficiently.</p>
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Contact Us</h3>
+                            <p>Phone: <a href="tel:+1234567890">8610895505</a></p>
+                            <p>Address: Guduvancheri MainRoad chengalpattu</p>
+                        </div>
+                        <div class="footer-follow">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Rax Autoation Services. All rights reserved.</p>
+                        <p>Privacy Policy | Terms of Service</p>
+                    </div>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                </footer>
+                <script src="./Javascript/Main-JS.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

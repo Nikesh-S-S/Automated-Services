@@ -1,0 +1,49 @@
+.dashboard {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.car-image {
+    width: 150px; /* Set a fixed width for the image */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.car-info {
+    flex-grow: 1; /* Allows this div to take up remaining space */
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+}

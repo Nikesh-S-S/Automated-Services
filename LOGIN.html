@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>SERVICES </title>
+        <link rel="stylesheet" href="./CSS/Login.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+    <body class="Main-Body">
+        <div class="Header-Main">
+            <div class="Header-one">
+                <div class="Navigation">
+                    <div class="Logo">
+                        <img class="Logo-img" src="./Images/Logo/Logo-Img.jpeg">
+                    </div>
+                    <div class="Header-Name">
+                        <h2>Rax Automation Services</h2>
+                    </div>
+                    <div class="Navigation-bar">
+                        <a class="Active Nav One" href="Index.html">HOME</a>
+                        <a class="Nav Three" href="LOGIN.html">LOGIN</a>
+                        <a class="Nav Two" href="Services.html">SERVICES</a>
+                        
+                        <a class="Nav Four" href="About.html">ABOUT</a>
+                    </div>
+                </div>
+
+
+                <div class="Login-Container">
+                    <!-- Car Automation Login/Register Container -->
+                    <div class="car-automation-container">
+                        <div class="tab">
+                          <div id="loginTab" class="active" onclick="showForm('login')">Login</div>
+                          <div id="registerTab" onclick="showForm('register')">Register</div>
+                        </div>
+                        <div id="loginForm" class="form-group active">
+                            <h2>Login Form</h2>
+                            <form action="user_login.php" method="POST">
+                                <label for="username">Email:</label> <!-- Changed from Username to Email for consistency -->
+                                <input type="text" id="username" name="username" required><br><br>
+                            
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required><br><br>
+                            
+                                <input type="submit" value="Login">
+                            </form>
+                            
+    </div>
+                        
+
+                            
+                        <div id="registerForm" class="form-group">
+                            <form action="register.php" method="POST">
+                                <label for="registerEmail">Email:</label>
+                                <input type="email" id="registerEmail" name="registerEmail" placeholder="Enter your email" required>
+                            
+                                <label for="registerPassword">Password:</label>
+                                <input type="password" id="registerPassword" name="registerPassword" placeholder="Create a password" required>
+                            
+                                <label for="registerConfirmPassword">Confirm Password:</label>
+                                <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="Confirm your password" required>
+                            
+                                <button type="submit" onclick="registerUser()">Register</button>
+                            </form>
+                            
+                        </form>
+                          
+          
+          
+            
+            
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="Admin-Login">
+                    <!-- Button to Open Admin Login -->
+                        <button onclick="showAdminLogin()" class="btn-open-admin">Open Admin-Login</button>
+
+                        <!-- Admin Login Container -->
+                        <div id="adminLoginDiv" class="admin-login-box hidden">
+                        <h2>Admin Login</h2>
+                        <div class="login-form-group">
+                            <form action="login_admin.php" method="POST">
+                                <label for="adminEmail">Email:</label>
+                                <input type="email" id="adminEmail" name="adminEmail" placeholder="Enter your admin email" required>
+                            
+                                <label for="adminPassword">Password:</label>
+                                <input type="password" id="adminPassword" name="adminPassword" placeholder="Enter your password" required>
+                            
+                                <button type="submit" class="btn-login">Login</button>
+                            </form>
+                            
+                        </form>
+                        </div>
+                        </div>
+
+                    
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer-container">
+                        <div class="footer-links">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="./Index.html">HOME</a></li>
+                                <li><a href="./Services.html">Services</a></li>
+                                <li><a href="./About.html">About Us</a></li>
+                                <li><a href="./LOGIN.html">LOGIN</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-about">
+                            <h3>About Us</h3>
+                            <p>We are dedicated to providing top-notch car automation services to enhance your driving experience. Our expert team ensures your vehicle runs smoothly and efficiently.</p>
+                        </div>
+                        <div class="footer-contact">
+                            <h3>Contact Us</h3>
+                            <p>Phone: <a href="tel:+1234567890">8610895505</a></p>
+                            <p>Address: Guduvancheri MainRoad chengalpattu</p>
+                        </div>
+                        <div class="footer-follow">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                                <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Rax Autoation Services. All rights reserved.</p>
+                        <p>Privacy Policy | Terms of Service</p>
+                    </div>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                </footer>
+
+
+
+            </div>
+        </div>
+    </div>
+  <script src="./Javascript/Main-JS.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
